@@ -74,9 +74,31 @@
                         <img src="./img/獎狀.jpg" class="card-img-top" alt="結業證書">
                         <div class="card-body">
                             <h5 class="card-title">清大生科營</h5>
-                            <p class="card-text">2022/7/6~7/8</p>
+                            <p class="card-text">2022/7/6~7/8<br>一直盯著顯微鏡看</p>
                             <a href="https://drive.google.com/drive/folders/14qPfRBCtkJdJMyYWd9MfB5MbSqXYr-OW?usp=sharing"
                                 class="btn btn-primary" target="_blank">相關照片</a>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                放大
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">結業證書</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="./img/獎狀.jpg" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -85,7 +107,35 @@
                         <img src="./img/獎狀.jpg" class="card-img-top" alt="結業證書">
                         <div class="card-body">
                             <h5 class="card-title">學習歷程web營</h5>
-                            <p class="card-text">這個網站就是那時架的</p>
+                            <p class="card-text">2022/7/25~7/29<br>這個網站就是那時架的!!</p>
+
+                            <button type="button" class="btn btn-secondary" data-bs-container="body"
+                                data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="git / github desktop / vs code / python">
+                                架這個網站用到的東西
+                            </button>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal2">
+                                放大
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">結業證書</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="./img/獎狀.jpg" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -111,12 +161,12 @@
                             <h5 class="card-title">勤學獎</h5>
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">
-                                查看
+                                data-bs-target="#exampleModal3">
+                                放大
                             </button>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
@@ -143,12 +193,12 @@
                             <h5 class="card-title">德行優良獎</h5>
                             <!-- Button trigger modal -->
                             <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal2">
-                                查看
+                                data-bs-target="#exampleModal4">
+                                放大
                             </button>
 
                             <!-- Modal -->
-                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog">
                                     <div class="modal-content">
@@ -177,7 +227,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
-
+    <script>
+        const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+        const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    </script>
 
 </body>
 
