@@ -37,6 +37,10 @@
         .card {
             margin: 5px;
         }
+
+        .card-title {
+            font-weight: 600;
+        }
     </style>
 
 
@@ -47,72 +51,128 @@
         <header class="d-flex justify-content-center py-3">
             <ul class="nav nav-pills">
                 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="learning process.html" class="nav-link active">學習歷程</a></li>
+                <li class="nav-item"><a href="學習歷程.html" class="nav-link active">學習歷程</a></li>
             </ul>
         </header>
     </div>
-    <div class=" py-5 text-center cover">
-        <h1 class="display-5 fw-bold">營隊</h1>
-        <div class="col-lg-6 mx-auto"></div>
-    </div>
 
-    <div class="white"></div>
+    <main>
+        <div class=" py-5 text-center cover">
+            <h1 class="display-5 fw-bold">經歷</h1>
+            <div class="col-lg-6 mx-auto"></div>
+        </div>
+        <div class="b-example-divider"></div>
+        <div class=" py-5 text-center cover">
+            <h1 class="display-5 fw-bold">營隊</h1>
+            <div class="col-lg-6 mx-auto"></div>
+        </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-4 col-lg-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="" class="card-img-top" alt="結業證書">
-                    <div class="card-body">
-                        <h5 class="card-title">清大生科營</h5>
-                        <p class="card-text"></p>
+        <div class="white"></div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="" class="card-img-top" alt="結業證書">
+                        <div class="card-body">
+                            <h5 class="card-title">清大生科營</h5>
+                            <p class="card-text">2022/7/6~7/8</p>
+                            <a href="https://drive.google.com/drive/folders/14qPfRBCtkJdJMyYWd9MfB5MbSqXYr-OW?usp=sharing"
+                                class="btn btn-primary" target="_blank">相關照片</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-4 col-lg-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="" class="card-img-top" alt="結業證書">
-                    <div class="card-body">
-                        <h5 class="card-title">學習歷程web營</h5>
-                        <p class="card-text"></p>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="" class="card-img-top" alt="結業證書">
+                        <div class="card-body">
+                            <h5 class="card-title">學習歷程web營</h5>
+                            <p class="card-text">這個網站就是那時架的</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="b-example-divider"></div>
+        <div class="white"></div>
+        <div class="b-example-divider"></div>
 
-    <div class=" py-5 text-center cover">
-        <h1 class="display-5 fw-bold">獎狀</h1>
-        <div class="col-lg-6 mx-auto"></div>
-    </div>
+        <div class=" py-5 text-center cover">
+            <h1 class="display-5 fw-bold">獎狀</h1>
+            <div class="col-lg-6 mx-auto"></div>
+        </div>
 
-    <div class="white"></div>
+        <div class="white"></div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col-12 col-md-4 col-lg-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/勤學獎.jpg" class="card-img-top" alt="勤學獎">
-                    <div class="card-body">
-                        <h5 class="card-title">勤學獎</h5>
-                        <p class="card-text"></p>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/勤學獎.jpg" class="card-img-top" alt="勤學獎">
+                        <div class="card-body">
+                            <h5 class="card-title">勤學獎</h5>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                查看
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">勤學獎</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="./img/勤學獎.jpg" class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-12 col-md-4 col-lg-3">
-                <div class="card" style="width: 18rem;">
-                    <img src="./img/德行優良獎.jpg" class="card-img-top" alt="德行優良獎">
-                    <div class="card-body">
-                        <h5 class="card-title">德行優良獎</h5>
-                        <p class="card-text"></p>
+
+
+                <div class="col-12 col-md-4 col-lg-3">
+                    <div class="card" style="width: 18rem;">
+                        <img src="./img/德行優良獎.jpg" class="card-img-top" alt="德行優良獎">
+                        <div class="card-body">
+                            <h5 class="card-title">德行優良獎</h5>
+                            <p class="card-text"></p>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal2">
+                                查看
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">德行優良獎</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="./img/德行優良獎.jpg"  class="img-fluid">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    </div>
+        </div>
+        </div>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
